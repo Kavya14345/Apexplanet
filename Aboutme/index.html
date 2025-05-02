@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Your About Me Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Create Your About Me 🌷</h1>
+    <form id="aboutForm">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" required><br>
+      <label for="bio">Short Bio:</label>
+      <textarea id="bio" required></textarea><br>
+      <label for="hobbies">Your Hobbies (comma-separated):</label>
+      <input type="text" id="hobbies" required><br>
+      <button type="submit">Generate My Page</button>
+    </form>
+    <div id="result" class="hidden">
+      <h2>Hello, <span id="displayName"></span>🌼</h2>
+      <p id="displayBio"></p>
+      <h3>🌸 My Hobbies:</h3>
+      <ul id="displayHobbies"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
