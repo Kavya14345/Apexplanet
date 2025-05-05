@@ -1,0 +1,126 @@
+/* Background and Font */
+body {
+    margin: 0;
+    font-family: 'Orbitron';
+    background: linear-gradient(135deg, #f06, #9f6);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Container */
+  .container {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    text-align: center;
+  }
+  
+  /* Headings */
+  h1, h2 {
+    color: #2a2a2a;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  /* Inputs and Textarea */
+  input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 12px;
+    border: 1px solid #aaa;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+    transition: 0.3s;
+  }
+  
+  input:focus, textarea:focus {
+    outline: none;
+    border-color: #2a5298;
+    box-shadow: 0 0 5px #2a5298;
+  }
+  
+  /* Submit Button */
+  button {
+    background-color: #416095;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #1e3c72;
+  }
+  
+  /* Thank You Message */
+  #thankYouMsg {
+    color: green;
+    margin-top: 15px;
+    font-weight: 600;
+  }
+  
+  /* To-Do List */
+  .todo-section {
+    margin-top: 30px;
+  }
+  
+  .todo-section input {
+    width: 70%;
+    padding: 10px;
+    margin-right: 10px;
+  }
+  
+  .todo-section button {
+    padding: 10px 15px;
+    background-color: #4b0082;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  .todo-section button:hover {
+    background-color: #2e0854;
+  }
+  
+  .todo-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+  }
+  
+  .todo-section li {
+    padding: 10px;
+    background: #f0f0f0;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .todo-section li:hover {
+    background-color: #e0e0e0;
+  }
+  
+  /* Gradient Background Animation */
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
