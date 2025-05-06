@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="C:\Users\KAVYA\Documents\quiz\style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div id="start-screen">
+      <h1>🔥 Quiz App</h1>
+      <button id="start-btn">Start Quiz</button>
+    </div>
+
+    <div id="quiz-screen" class="hide">
+      <div class="top-bar">
+        <span id="question-number">Question 1</span>
+        <span id="timer">⏳ 5s</span>
+      </div>
+      <div id="question-box">
+        <h2 id="question">Question text</h2>
+        <ul id="answers"></ul>
+      </div>
+      <button id="next-btn" class="hide">Next</button>
+    </div>
+
+    <div id="result-screen" class="hide">
+      <h2>Your Score:</h2>
+      <p id="score"></p>
+      <button id="restart-btn">Play Again</button>
+    </div>
+  </div>
+
+  <script src="C:\Users\KAVYA\Documents\quiz\script.js"></script>
+</body>
+</html>
