@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Kavya</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(135deg, #fdfcfb, #e2d1c3);
+      color: #333;
+    }
+
+    header {
+      background: white;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .nav-left {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #d86c6c;
+    }
+
+    .nav-right {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      padding: 0;
+      margin: 0;
+    }
+
+    .nav-right a {
+      text-decoration: none;
+      color: #4a4e69;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .nav-right a:hover,
+    .nav-right .active {
+      color: #d86c6c;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    img {
+      width: 280px;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    .content h1 {
+      margin-top: 0;
+      color: #d86c6c;
+    }
+
+    .content p {
+      line-height: 1.6;
+    }
+
+    .links a {
+      text-decoration: none;
+      color: #4a4e69;
+      font-weight: bold;
+      margin-right: 15px;
+      display: inline-block;
+    }
+
+    blockquote {
+      font-style: italic;
+      color: #8e44ad;
+      margin-top: 1rem;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+        <div class="nav-left">Kavya's Website</div>
+        <ul class="nav-right">
+          <li><a href="C:\Users\KAVYA\Documents\3in1\index.html" >Home</a></li>
+          <li><a href="C:\Users\KAVYA\Documents\3in1\about.html" class="active">About Me</a></li>
+          <li><a href="C:\Users\KAVYA\Documents\3in1\todo.html">To-Do List</a></li>
+          <li><a href="C:\Users\KAVYA\Documents\3in1\product.html">Products</a></li>
+        </ul>
+    </nav>
+  </header>
+  <main class="container">
+    <img src="C:\Users\KAVYA\Downloads\Snapchat-581138314.jpg" alt="Sampathirao Kavya">
+    <div class="content">
+      <h1>Hi, I'm Sampathirao Kavya 👩‍💻</h1>
+      <p>A 3rd-year B.Tech CSE student at JNTU GV University, Vizianagaram. I love exploring AI, machine learning, and building creative digital experiences. I'm currently an intern at <strong>Apexplanet</strong> (Web Development), and have previously worked with <strong>Cloud Counselage Pvt. Ltd.</strong>, <strong>CodSoft</strong>, and <strong>Data Alcott Systems</strong>.</p>
+
+      <p><strong>Skills:</strong> C, C++, Python, Java, HTML, SQL, R, Linux, DBMS, Web Technologies</p>
+      <p><strong>Projects:</strong> Chatbot, TicTacToe Game, Ebook Reader, Recommendation Systems</p>
+      <p><strong>Certifications:</strong> AWS Cloud, Python Basics (edX), and more from Harvard, Coursera, Microsoft, etc.</p>
+
+      <div class="links">
+        <a href="C:\Users\KAVYA\Downloads\my_resume.pdf" target="_blank">📄 Resume</a>
+        <a href="https://github.com/dashboard" target="_blank">🔗 GitHub</a>
+        <a href="https://www.linkedin.com/in/kavya-sampathirao-9b142b256" target="_blank">💼 LinkedIn</a>
+      </div>
+
+      <blockquote>"Code with purpose, dream with passion, and build with love." 💫</blockquote>
+    </div>
+  </main>
+</body>
+</html>
