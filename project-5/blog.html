@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog - Cara</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(135deg, #f5f7fa,rgb(8, 129, 120)); /* Pastel background */
+      margin: 0;
+      padding: 0;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: rgb(8, 129, 120); /* Cara primary color */
+      padding: 15px 0;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    #navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    #navbar .logo {
+      font-size: 1.8em;
+      font-weight: bold;
+      color: white;
+    }
+
+    #navbar ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    #navbar ul li {
+      margin: 0 15px;
+    }
+
+    #navbar ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+
+    #navbar ul li a:hover {
+      color: #ff6347; /* Hover color */
+    }
+
+    /* Main Content Styles */
+    .blog-page {
+      padding: 40px;
+      background-color: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin: 40px auto;
+      max-width: 1200px;
+    }
+
+    .blog-page h1 {
+      font-size: 36px;
+      color: #ff6347; /* Warm color for title */
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .blog-post {
+      background-color: #f9f9f9;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      transition: transform 0.3s;
+    }
+
+    .blog-post:hover {
+      transform: translateY(-5px); /* Hover effect for post */
+    }
+
+    .blog-post h2 {
+      font-size: 28px;
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    .blog-post p {
+      font-size: 16px;
+      color: #666;
+      line-height: 1.6;
+    }
+
+    .read-more {
+      text-decoration: none;
+      color: #ff6347;
+      font-weight: bold;
+      margin-top: 15px;
+      display: inline-block;
+      transition: color 0.3s;
+    }
+
+    .read-more:hover {
+      color: #ff4500;
+    }
+
+    /* Footer Styles */
+    footer {
+      background: linear-gradient(135deg, #002147, rgb(8, 129, 120)); /* Dark blue gradient */
+      padding: 20px;
+      text-align: center;
+      color: white;
+      margin-top: auto; /* Ensure footer stays at the bottom */
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .blog-page h1 {
+        font-size: 30px;
+      }
+
+      .blog-post h2 {
+        font-size: 24px;
+      }
+
+      .blog-post p {
+        font-size: 14px;
+      }
+
+      footer {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav id="navbar">
+        <a href="#"><img src="https://i.postimg.cc/x8ncvFjr/logo.png"></a>
+     
+      <ul>
+        <li><a href="C:\Users\KAVYA\Documents\project\index.html">Home</a></li>
+        <li><a href="C:\Users\KAVYA\Documents\project\shop.html">Shop</a></li>
+        <li><a href="C:\Users\KAVYA\Documents\project\blog.html" class="active">Blog</a></li>
+        <li><a href="C:\Users\KAVYA\Documents\project\about.html">About</a></li>
+        <li><a href="C:\Users\KAVYA\Documents\project\contact.html">Contact</a></li>
+        <li><a href="C:\Users\KAVYA\Documents\project\cart.html">Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="blog-page">
+    <h1>Our Latest Blog Posts</h1>
+
+    <div class="blog-post">
+      <h2>Top 5 Summer Fashion Trends</h2>
+      <p>Summer is here, and it's time to refresh your wardrobe. Here are the top 5 fashion trends you need to follow this season to stay stylish and comfortable...</p>
+      <a href="https://www.bing.com/aclk?ld=e85NyGBOW_8w7V-NZS4Vq2JTVUCUwkLHvQF9VM7U3-J9NvoakhII5lPyS5afb4alMRdYnF97HSdXhNfkKU9B-w9LEo-R6MJsfLnmQKyfllVYx-2dX2Ud8CzdGTtbuqnZ4342XpqcokuaweM9FC7V8e-Q4RpHjrMAmpcj18KSyKXAyLIuDRxBGWh_sULcdysAuKamujYA&u=aHR0cHMlM2ElMmYlMmZ3d3cyLmhtLmNvbSUyZmVuX2luJTJmbGFkaWVzJTJmc2hvcC1ieS1wcm9kdWN0JTJmaG0tcGx1cy5odG1sJTNmdXRtX2lkJTNkYmlfY21wLTYxNDA2MTMwN19hZGctMTEzNjg5NjcyNTk4MDU5Ml9hZC03MTA1NjE5OTAxNTM5MF9kYXQtMjMyMjg1NTc1MzA0NDE4MiUzYWxvYy05MF9kZXYtY19leHQtX3ByZC1fc2lnLTI2MDAwMDljYTlkZjFkMjU5NTFjNjg4MmZlY2Y2ZTllJTI2bXNjbGtpZCUzZDI2MDAwMDljYTlkZjFkMjU5NTFjNjg4MmZlY2Y2ZTllJTI2dXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX2NhbXBhaWduJTNkbWtfaW4lMjU3Q2xuX2VuZyUyNTdDcGxfbWljcm9zb2Z0JTI1N0NjdF9zJTI1N0NidV9sYWRpZXMlMjU3Q2t0X2dlbiUyNTdDYmdfcGVyZm9ybWFuY2UlMjU3Q2NzX2hna3YyJTI1N0NhZHRfYWxsJTI1N0NzcF90ZXh0JTI1N0NwaV9pbmcxMWFudTNhYTAxNCUyNnV0bV90ZXJtJTNkTGFkaWVzLVBsdXNTaXplJTI2dXRtX2NvbnRlbnQlM2RMYWRpZXMlMjUyMC0lMjUyMFBsdXMlMjUyMFNpemUlMjUyMC0lMjUyMERTQQ&rlid=2600009ca9df1d25951c6882fecf6e9e" class="read-more">Read More</a>
+    </div>
+
+    <div class="blog-post">
+      <h2>How to Find the Perfect Outfit for Any Occasion</h2>
+      <p>Choosing the right outfit can be tricky, but with a few tips and tricks, you can always look your best. In this post, we'll show you how to pick the perfect outfit for any occasion...</p>
+      <a href="https://www.amazon.in/s?k=maxi+dreas&adgrpid=1319415560013590&hvadid=82463731573162&hvbmt=bb&hvdev=c&hvlocphy=149577&hvnetw=o&hvqmt=b&hvtargid=kwd-82464351898361%3Aloc-90&hydadcr=5621_1955486&mcid=0454dfe0ce78304c938f5a87d9f3616a&msclkid=1b55836e84081d1693d5eb70d318554b&tag=msndeskstdin-21&ref=pd_sl_9ijhyultev_b" class="read-more">Read More</a>
+    </div>
+
+    <div class="blog-post">
+      <h2>Shopping on a Budget: How to Score Great Deals</h2>
+      <p>Shopping doesn’t have to be expensive. Learn how to shop on a budget without compromising on quality. We’ll guide you through finding amazing deals and discounts...</p>
+      <a href="https://www.amazon.in/s?k=maxi+dreas&adgrpid=1319415560013590&hvadid=82463731573162&hvbmt=bb&hvdev=c&hvlocphy=149577&hvnetw=o&hvqmt=b&hvtargid=kwd-82464351898361%3Aloc-90&hydadcr=5621_1955486&mcid=0454dfe0ce78304c938f5a87d9f3616a&msclkid=1b55836e84081d1693d5eb70d318554b&tag=msndeskstdin-21&ref=pd_sl_9ijhyultev_b" class="read-more">Read More</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Cara. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
